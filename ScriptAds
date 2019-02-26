@@ -1,0 +1,33 @@
+<style>
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@font-face{font-family:&#39;Poppins&#39;;font-style:normal;font-weight:300;src:local(&#39;Poppins Light&#39;), local(&#39;Poppins-Light&#39;), url(https://fonts.gstatic.com/s/poppins/v1/MEXWGbc1EWORtBwy9fFeUr3hpw3pgy2gAi-Ip7WPMi0.woff) format(&#39;woff&#39;)}@font-face{font-family:&#39;Poppins&#39;;font-style:normal;font-weight:400;src:local(&#39;Poppins&#39;), local(&#39;Poppins-Regular&#39;), url(https://fonts.gstatic.com/s/poppins/v1/0hyMx537ApGjkDVOSI6XEgLUuEpTyoUstqEm5AMlJo4.woff) format(&#39;woff&#39;)}@font-face{font-family:&#39;Poppins&#39;;font-style:normal;font-weight:500;src:local(&#39;Poppins Medium&#39;), local(&#39;Poppins-Medium&#39;), url(https://fonts.gstatic.com/s/poppins/v1/UGh2YG8gx86rRGiAZYIbV73hpw3pgy2gAi-Ip7WPMi0.woff) format(&#39;woff&#39;)}@font-face{font-family:&#39;Poppins&#39;;font-style:normal;font-weight:600;src:local(&#39;Poppins SemiBold&#39;), local(&#39;Poppins-SemiBold&#39;), url(https://fonts.gstatic.com/s/poppins/v1/9VWMTeb5jtXkNoTv949Npb3hpw3pgy2gAi-Ip7WPMi0.woff) format(&#39;woff&#39;)}@font-face{font-family:&#39;Poppins&#39;;font-style:normal;font-weight:700;src:local(&#39;Poppins Bold&#39;), local(&#39;Poppins-Bold&#39;), url(https://fonts.gstatic.com/s/poppins/v1/aDjpMND83pDErGXlVEr-Sb3hpw3pgy2gAi-Ip7WPMi0.woff) format(&#39;woff&#39;)}@font-face{font-family:&#39;Roboto&#39;;font-style:normal;font-weight:300;src:local(&#39;Roboto Light&#39;), local(&#39;Roboto-Light&#39;), url(https://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnbO3LdcAZYWl9Si6vvxL-qU.woff) format(&#39;woff&#39;)}@font-face{font-family:&#39;Roboto&#39;;font-style:normal;font-weight:400;src:local(&#39;Roboto&#39;), local(&#39;Roboto-Regular&#39;), url(https://fonts.gstatic.com/s/roboto/v15/Xu_FYwbs8k0teWf0uC8JpevvDin1pK8aKteLpeZ5c0A.woff) format(&#39;woff&#39;)}@font-face{font-family:&#39;Roboto&#39;;font-style:normal;font-weight:700;src:local(&#39;Roboto Bold&#39;), local(&#39;Roboto-Bold&#39;), url(https://fonts.gstatic.com/s/roboto/v15/97uahxiqZRoncBaCEI3aW7O3LdcAZYWl9Si6vvxL-qU.woff) format(&#39;woff&#39;)}
+.AcaoPopup{position:fixed;left:0;top:0;height:100%;width:100%;pointer-events:none;background-color:rgba(0,0,0,0.9);opacity:0;visibility:hidden;z-index:99999;-webkit-transition:opacity .3s 0s,visibility 0 .3s;-moz-transition:opacity .3s 0s,visibility 0 .3s;transition:opacity .3s 0s,visibility 0 .3s}.AcaoPopup.is-visible{opacity:1;visibility:visible;-webkit-transition:opacity .3s 0s,visibility 0 0;-moz-transition:opacity .3s 0s,visibility 0 0;transition:opacity .3s 0s,visibility 0 0}.Popup{width:90%;height:100%;position:relative;left:30px;top:-450px;pointer-events:none;z-index:100000}.Popup img{max-width:100%;height:auto}@media only screen and ( min-width:600px ){.Popup{display:none}.AcaoPopup{background-color:rgba(0,0,0,0.0)}.Popupimage{display:none}}
+</style>
+
+<script type='text/javascript'>
+//<![CDATA[
+jQuery(document).ready(function($){
+  $('.AcaoPopup').addClass('is-visible').hide();
+  $('.Popup').hide();
+     var x = document.referrer;
+     var y = x.search("facebook");
+     var z = x.search("//t.co");
+     var w = x.search("twitter");
+   if(((y > 0) || (z > 0) || (w > 0))) {
+    setTimeout(function() { window.location=window.location;},15000);
+    $('.AcaoPopup').addClass('is-visible').show();
+    $('.Popup').show();
+   }
+});
+//]]>
+</script>
+
+<div class='Popup' style='position:absolute;'>
+        <div class='Popupimage'>
+          <img src='link da sua imagem'/>
+        </div>
+      </div>
+      <div class='AcaoPopup' role='alert'/>
+      <div class='ads'>
+        <!-- link do seu banner -->
+      </div>
