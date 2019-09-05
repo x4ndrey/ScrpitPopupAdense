@@ -6,5 +6,3 @@ O script tem função em abrir um popup onde o mesmo só vai aparecer se for atr
 
 imagens -> https://bit.ly/2VhVvC3 , https://bit.ly/2BSkTae
 
-Dúvidas https://twitter.com/itsAndrey_
-
